@@ -1,0 +1,14 @@
+localstorage.setItem('tareas',JSON.stringify(tareas))
+
+///recuperar datos
+
+const tareasGuardada = localStorage.getItem('tarea')
+
+const tareasRecuperadas = tareasGuardadas ? JSON.parse(tareasGuardadas) : []
+
+
+//
+console.table(tareasRecuperadas)
+
+
+///watch : observa los cambios de una variable
